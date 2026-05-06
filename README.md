@@ -41,5 +41,6 @@ graph TD
 3. Authenticate: `gcloud auth application-default login`
 4. Launch: `python main.py` and `streamlit run dashboard.py`
 
+
 ---
-*Created with ❤️ by Amany Gamel & Antigravity AI*
+*Elevating OMS Resilience with Cloud-Native Intelligence.*
