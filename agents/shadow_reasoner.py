@@ -3,8 +3,8 @@ import vertexai
 from vertexai.generative_models import GenerativeModel
 
 class ShadowReasoner:
-    def __init__(self, project_id="oms-agentic-sentinel"):
-        self.project_id = project_id
+    def __init__(self, project_id=None):
+        self.project_id = project_id or os.getenv("GCP_PROJECT_ID", "your-project-id")
         
         try:
             # Explicitly initialize Vertex AI

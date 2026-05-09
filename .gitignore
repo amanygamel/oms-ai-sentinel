@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.venv/
+.env
+
+# GCP & Credentials
+*.json
+!README.md
+your-key-file.json
+oms-agentic-sentinel-key.json
+
+# Local DBs
+data/vector_db/
+local_db/
+chroma.sqlite3
+
+# Reports
+*.png
+oms_performance_report.png
+Hands-On_Large_Language_Models.pdf

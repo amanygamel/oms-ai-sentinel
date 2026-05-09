@@ -2,8 +2,8 @@ import os
 from google.cloud import bigquery, storage
 
 class GCPClient:
-    def __init__(self, project_id="oms-agentic-sentinel"):
-        self.project_id = project_id
+    def __init__(self, project_id=None):
+        self.project_id = project_id or os.getenv("GCP_PROJECT_ID", "your-project-id")
         
         # Clear any invalid credentials path to force ADC
         cred_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")

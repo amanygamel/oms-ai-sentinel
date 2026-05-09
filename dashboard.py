@@ -11,7 +11,7 @@ st.title("🛸 OMS Sentinel: AI-Driven Command Center")
 st.markdown("---")
 
 # GCP Config
-PROJECT_ID = "oms-agentic-sentinel"
+PROJECT_ID = os.getenv("GCP_PROJECT_ID", "your-project-id")
 client = bigquery.Client(project=PROJECT_ID)
 
 # Placeholders for metrics

@@ -3,7 +3,8 @@ from google.cloud import bigquery
 import pandas as pd
 import os
 
-def generate_grand_report(project_id="oms-agentic-sentinel"):
+def generate_grand_report(project_id=None):
+    project_id = project_id or os.getenv("GCP_PROJECT_ID", "your-project-id")
     print("🎨 [Visual Agent] Generating Grand Performance Report...")
     client = bigquery.Client(project=project_id)
     
